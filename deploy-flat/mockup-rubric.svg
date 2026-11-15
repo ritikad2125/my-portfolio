@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="hdr2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b5797"/>
+      <stop offset="1" stop-color="#22457a"/>
+    </linearGradient>
+    <filter id="sh2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b1424" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="560" fill="#f3f4f6"/>
+  <g filter="url(#sh2)">
+    <rect x="24" y="20" width="1152" height="520" rx="12" fill="#ffffff" stroke="#e2e4e8"/>
+  </g>
+  <rect x="24" y="20" width="1152" height="46" rx="12" fill="#1e2635"/>
+  <rect x="24" y="44" width="1152" height="22" fill="#1e2635"/>
+  <circle cx="48" cy="43" r="6" fill="#ff5f57"/>
+  <circle cx="68" cy="43" r="6" fill="#febc2e"/>
+  <circle cx="88" cy="43" r="6" fill="#28c840"/>
+  <text x="600" y="48" fill="#cdd3df" font-size="14" text-anchor="middle" font-weight="600">Rubric_Compliance_Review.xlsx — LLM Evaluation</text>
+  <rect x="24" y="66" width="1152" height="30" fill="#f6f7f9"/>
+  <text x="44" y="86" fill="#5c6472" font-size="12">File   Home   Insert   Data   Review   View</text>
+  <text x="1140" y="86" fill="#2b5797" font-size="12" text-anchor="end" font-weight="700">Filtered: 1 project ▾</text>
+
+  <!-- left: rubric grid -->
+  <g font-size="12.5" font-weight="700" fill="#ffffff">
+    <rect x="24"  y="96" width="46"  height="34" fill="url(#hdr2)"/><text x="47" y="118" text-anchor="middle">#</text>
+    <rect x="70"  y="96" width="250" height="34" fill="url(#hdr2)"/><text x="84" y="118">Item / Problem</text>
+    <rect x="320" y="96" width="112" height="34" fill="url(#hdr2)"/><text x="376" y="118" text-anchor="middle">Self-contained</text>
+    <rect x="432" y="96" width="92"  height="34" fill="url(#hdr2)"/><text x="478" y="118" text-anchor="middle">LaTeX valid</text>
+    <rect x="524" y="96" width="112" height="34" fill="url(#hdr2)"/><text x="580" y="118" text-anchor="middle">Fully constr.</text>
+    <rect x="636" y="96" width="104" height="34" fill="url(#hdr2)"/><text x="688" y="118" text-anchor="middle">Answer boxed</text>
+    <rect x="740" y="96" width="92"  height="34" fill="url(#hdr2)"/><text x="786" y="118" text-anchor="middle">Score</text>
+  </g>
+
+  <g font-size="12" fill="#2a3340">
+    <rect x="24" y="130" width="808" height="40" fill="#ffffff"/>
+    <rect x="24" y="170" width="808" height="40" fill="#f3f6fb"/>
+    <rect x="24" y="210" width="808" height="40" fill="#ffffff"/>
+    <rect x="24" y="250" width="808" height="40" fill="#f3f6fb"/>
+    <rect x="24" y="290" width="808" height="40" fill="#ffffff"/>
+    <rect x="24" y="330" width="808" height="40" fill="#f3f6fb"/>
+    <rect x="24" y="370" width="808" height="40" fill="#ffffff"/>
+    <rect x="24" y="410" width="808" height="40" fill="#f3f6fb"/>
+
+    <text x="47" y="155" text-anchor="middle" fill="#7a8290">01</text><text x="84" y="155">Thermochemistry — Hess's law</text>
+    <text x="47" y="195" text-anchor="middle" fill="#7a8290">02</text><text x="84" y="195">Electrochemistry — Nernst eqn.</text>
+    <text x="47" y="235" text-anchor="middle" fill="#7a8290">03</text><text x="84" y="235">Organic — reaction mechanism</text>
+    <text x="47" y="275" text-anchor="middle" fill="#7a8290">04</text><text x="84" y="275">Quantum — particle in a box</text>
+    <text x="47" y="315" text-anchor="middle" fill="#7a8290">05</text><text x="84" y="315">Coordination — CFT splitting</text>
+    <text x="47" y="355" text-anchor="middle" fill="#7a8290">06</text><text x="84" y="355">Spin dynamics — radical pair</text>
+    <text x="47" y="395" text-anchor="middle" fill="#7a8290">07</text><text x="84" y="395">Analytical — titration curve</text>
+    <text x="47" y="435" text-anchor="middle" fill="#7a8290">08</text><text x="84" y="435">Kinetics — Arrhenius fit</text>
+  </g>
+
+  <!-- rubric marks: columns x = 376,478,580,688 ; rows y = 155..435 step40 -->
+  <g font-size="13.5" font-weight="700" text-anchor="middle">
+    <!-- row templates: P=pass green, X=fail red, ~=partial amber -->
+    <!-- r1 -->
+    <text x="376" y="155" fill="#1a7a42">✓</text><text x="478" y="155" fill="#1a7a42">✓</text><text x="580" y="155" fill="#1a7a42">✓</text><text x="688" y="155" fill="#1a7a42">✓</text>
+    <!-- r2 -->
+    <text x="376" y="195" fill="#1a7a42">✓</text><text x="478" y="195" fill="#1a7a42">✓</text><text x="580" y="195" fill="#1a7a42">✓</text><text x="688" y="195" fill="#1a7a42">✓</text>
+    <!-- r3 -->
+    <text x="376" y="235" fill="#1a7a42">✓</text><text x="478" y="235" fill="#1a7a42">✓</text><text x="580" y="235" fill="#c9962b">~</text><text x="688" y="235" fill="#1a7a42">✓</text>
+    <!-- r4 -->
+    <text x="376" y="275" fill="#1a7a42">✓</text><text x="478" y="275" fill="#1a7a42">✓</text><text x="580" y="275" fill="#1a7a42">✓</text><text x="688" y="275" fill="#1a7a42">✓</text>
+    <!-- r5 -->
+    <text x="376" y="315" fill="#1a7a42">✓</text><text x="478" y="315" fill="#c62f21">✗</text><text x="580" y="315" fill="#1a7a42">✓</text><text x="688" y="315" fill="#1a7a42">✓</text>
+    <!-- r6 -->
+    <text x="376" y="355" fill="#1a7a42">✓</text><text x="478" y="355" fill="#1a7a42">✓</text><text x="580" y="355" fill="#1a7a42">✓</text><text x="688" y="355" fill="#1a7a42">✓</text>
+    <!-- r7 -->
+    <text x="376" y="395" fill="#1a7a42">✓</text><text x="478" y="395" fill="#1a7a42">✓</text><text x="580" y="395" fill="#1a7a42">✓</text><text x="688" y="395" fill="#c9962b">~</text>
+    <!-- r8 -->
+    <text x="376" y="435" fill="#1a7a42">✓</text><text x="478" y="435" fill="#1a7a42">✓</text><text x="580" y="435" fill="#1a7a42">✓</text><text x="688" y="435" fill="#1a7a42">✓</text>
+  </g>
+  <!-- score column -->
+  <g font-size="11.5" font-weight="700" text-anchor="middle">
+    <text x="786" y="155" fill="#1a7a42">4/4</text>
+    <text x="786" y="195" fill="#1a7a42">4/4</text>
+    <text x="786" y="235" fill="#c9962b">3.5/4</text>
+    <text x="786" y="275" fill="#1a7a42">4/4</text>
+    <text x="786" y="315" fill="#c62f21">3/4</text>
+    <text x="786" y="355" fill="#1a7a42">4/4</text>
+    <text x="786" y="395" fill="#c9962b">3.5/4</text>
+    <text x="786" y="435" fill="#1a7a42">4/4</text>
+  </g>
+
+  <g stroke="#e4e8ef" stroke-width="1">
+    <line x1="24" y1="170" x2="832" y2="170"/><line x1="24" y1="210" x2="832" y2="210"/>
+    <line x1="24" y1="250" x2="832" y2="250"/><line x1="24" y1="290" x2="832" y2="290"/>
+    <line x1="24" y1="330" x2="832" y2="330"/><line x1="24" y1="370" x2="832" y2="370"/>
+    <line x1="24" y1="410" x2="832" y2="410"/><line x1="24" y1="450" x2="832" y2="450"/>
+    <line x1="70" y1="96" x2="70" y2="450"/><line x1="320" y1="96" x2="320" y2="450"/>
+    <line x1="432" y1="96" x2="432" y2="450"/><line x1="524" y1="96" x2="524" y2="450"/>
+    <line x1="636" y1="96" x2="636" y2="450"/><line x1="740" y1="96" x2="740" y2="450"/>
+  </g>
+
+  <!-- right: summary panel -->
+  <g>
+    <rect x="856" y="96" width="320" height="354" rx="10" fill="#fbfcfe" stroke="#e6eaf1"/>
+    <text x="880" y="128" font-size="15" font-weight="800" fill="#1e2635">Compliance Summary</text>
+    <text x="880" y="148" font-size="11.5" fill="#7a8290">248 items reviewed this cycle</text>
+
+    <!-- donut -->
+    <g transform="translate(1016,232)">
+      <circle r="62" fill="none" stroke="#e7ebf2" stroke-width="18"/>
+      <circle r="62" fill="none" stroke="#2b7a42" stroke-width="18"
+        stroke-dasharray="366 390" stroke-dashoffset="97.5" transform="rotate(-90)"/>
+      <circle r="62" fill="none" stroke="#c9962b" stroke-width="18"
+        stroke-dasharray="19 390" stroke-dashoffset="-268" transform="rotate(-90)"/>
+      <text x="0" y="-2" font-size="26" font-weight="800" fill="#1e2635" text-anchor="middle">94%</text>
+      <text x="0" y="18" font-size="10.5" fill="#7a8290" text-anchor="middle">rubric-compliant</text>
+    </g>
+
+    <g font-size="12" fill="#3a4350">
+      <rect x="880" y="320" width="12" height="12" rx="3" fill="#2b7a42"/><text x="902" y="331">Pass — 233</text>
+      <rect x="880" y="344" width="12" height="12" rx="3" fill="#c9962b"/><text x="902" y="355">Partial — 12</text>
+      <rect x="880" y="368" width="12" height="12" rx="3" fill="#c62f21"/><text x="902" y="379">Rework — 3</text>
+    </g>
+    <line x1="1050" y1="316" x2="1050" y2="386" stroke="#e6eaf1"/>
+    <text x="1070" y="331" font-size="12" fill="#3a4350">LaTeX errors: <tspan font-weight="700">7</tspan></text>
+    <text x="1070" y="355" font-size="12" fill="#3a4350">Unconstrained: <tspan font-weight="700">5</tspan></text>
+    <text x="1070" y="379" font-size="12" fill="#3a4350">Avg score: <tspan font-weight="700" fill="#2b7a42">3.9</tspan></text>
+
+    <rect x="872" y="404" width="288" height="34" rx="8" fill="#eef4fb"/>
+    <text x="1016" y="426" font-size="12" font-weight="700" fill="#2b5797" text-anchor="middle">Reviewer sign-off: R. Dhiman ✎</text>
+  </g>
+
+  <!-- status bar -->
+  <rect x="24" y="460" width="1152" height="42" fill="#f6f7f9"/>
+  <text x="44" y="486" font-size="11.5" fill="#5c6472">Rubric: Self-contained · LaTeX · Fully-constrained · Boxed answer   |   Weight: 1.0 each</text>
+  <text x="1156" y="486" font-size="11.5" fill="#5c6472" text-anchor="end">Last synced 09:42</text>
+  <rect x="24" y="502" width="1152" height="38" rx="0" fill="#2b5797"/>
+  <text x="44" y="525" font-size="12" fill="#dbe6f5" font-weight="600">Innodata · LLM Evaluation · Chemistry QC</text>
+  <text x="1156" y="525" font-size="12" fill="#dbe6f5" text-anchor="end" font-weight="600">100% ⊕</text>
+</svg>
